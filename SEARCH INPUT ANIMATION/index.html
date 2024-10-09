@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Input Animation</title>
+    <style>
+
+         body{
+            background-color: blueviolet;
+            text-align: center;
+         } 
+        
+        .search{
+            position: relative;
+            width: 15px;
+            height: 15px;
+            border-radius: 20px;
+            padding: 10px;
+            transition-duration: 500ms;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            font-size: 15px;
+            color: transparent;
+            border: 1px solid white;
+            overflow: hidden;
+            background: url(search.svg) no-repeat transparent ;
+            background-size: 22px;
+            background-position: 45% 50%;
+        }
+
+        .search:hover{
+            cursor: pointer;
+            border: 1px solid #ff9950;
+            background: url(search.svg) no-repeat transparent;
+            background-size: 22px;
+            background-position: 45% 50%;
+            
+        }
+
+        .search:focus{
+            width: 200px;
+            cursor: pointer;
+            color:white;
+            padding-left: 55px;
+            outline: none;
+            border: 1px solid #ff9950;
+            background-color: transparent;
+            background: url(search.svg) no-repeat;
+            background-size: 22px;
+            background-position: 10% 50%;
+
+        }
+
+        button{
+            width: 90px;
+            height: 30px;
+            border-radius: 8px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            border: none;
+            font-size: 15px;
+            color: #ff9950;
+
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <input class="search">
+    <button>Search</button>
+</body>
+</html>
