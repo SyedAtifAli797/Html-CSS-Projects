@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.sec1-homePage, .sec2-homePage, .features, .sec4 {
+    background-color: #181717;
+    padding: 20px 0;
+}
+
+.separation {
+    background-color: #302e2e;
+    height: 3px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.box1-text, .sec2-textarea, .sec4-textbox {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sec1-box1-text, .sec2-textarea-heading, .sec4-heading {
+    color: rgba(255, 217, 0, 0.575);
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.sec1-box1-para, .text-para, .sec4-paras {
+    color: rgb(185, 179, 179);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.booknowButton, .learnMoreButton {
+    padding: 10px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.booknowButton {
+    background-color: #D4AF37;
+}
+
+.booknowButton:hover {
+    background-color: #c89b30;
+}
+
+.learnMoreButton {
+    background-color: transparent;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+}
+
+.learnMoreButton:hover {
+    background-color: #D4AF37;
+    color: white;
+}
+
+.sec1-image, .sec2-img {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sec1-image img, .sec2-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.texts {
+    padding: 15px;
+    margin: 20px 0;
+    background-color: rgb(48, 45, 45);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* width: 80%; */
+    max-width: 600px;
+}
+
+.texts:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(255, 217, 0, 0.575) 0 4px 8px;
+}
+
+.texts-subheading {
+    color: rgba(255, 217, 0, 0.575);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.features {
+    padding: 40px 0;
+}
+
+.features-heading {
+    font-size: 2.5rem;
+    color: rgba(255, 217, 0, 0.575);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature-box {
+    background-color: rgb(48, 45, 45);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 calc(50% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+    /* transform: scale(1.05); */
+    transform: rotateY(360deg);
+    box-shadow: 0 4px 8px rgba(255, 217, 0, 0.5);
+    transition: 1.5s;
+}
+
+.feature-number {
+    background-color: rgba(255, 217, 0, 0.575);
+    color: #181717;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.feature-content h3 {
+    font-size: 1.2rem;
+    color: rgba(255, 217, 0, 0.575);
+}
+
+.feature-content p {
+    font-size: 1rem;
+    color: rgb(185, 179, 179);
+    margin-top: 10px;
+}
+
+.sec4 {
+    padding: 40px 0;
+}
+
+.sec4-heading {
+    color: rgba(255, 217, 0, 0.575);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.sec4-subheading {
+    color: rgba(255, 217, 0, 0.575);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+.sec4-paras {
+    color: rgb(185, 179, 179);
+    margin-top: 15px;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.sec4-textbox {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box1-text, .sec2-textarea {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sec1-box1-para, .text-para {
+        width: 100%;
+    }
+
+    .booknowButton, .learnMoreButton {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sec1-image img, .sec2-img img {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .container4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec4-textbox {
+        max-width: 80%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec1-box1-text, .sec2-textarea-heading, .features-heading, .sec4-heading {
+        font-size: 2rem;
+    }
+
+    .sec1-box1-para, .text-para, .sec4-paras {
+        font-size: 1rem;
+    }
+
+    .booknowButton, .learnMoreButton {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .feature-content h3 {
+        font-size: 1rem;
+    }
+
+    .feature-content p {
+        font-size: 0.9rem;
+    }
+
+    .feature-number {
+        font-size: 1.2rem;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec1-box1-text, .sec2-textarea-heading, .features-heading, .sec4-heading {
+        font-size: 1.5rem;
+    }
+
+    .sec1-box1-para, .text-para, .sec4-paras {
+        font-size: 0.9rem;
+    }
+
+    .booknowButton, .learnMoreButton {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .feature-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .feature-content p {
+        font-size: 0.8rem;
+    }
+
+    .feature-number {
+        font-size: 1rem;
+        width: 30px;
+        height: 30px;
+    }
+
+    .feature-box {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .container4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec4-textbox {
+        max-width: 90%;
+        width: 100%;
+    }
+}
+
+.dining-experiences {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #181717;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: rgba(255, 217, 0, 0.575);
+}
+
+.experiences-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience-box {
+    background-color: rgb(48, 45, 45);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.experience-box:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 217, 0, 0.5);
+    transition: 0.3s;
+
+}
+
+.experience-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgba(255, 217, 0, 0.575);
+}
+
+.experience-box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: rgb(185, 179, 179);
+}
+
+.experience-number {
+    background-color: #D4AF37;
+    color: #181717;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .experience-box {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .experience-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .experience-box p {
+        font-size: 0.9rem;
+    }
+
+    .experience-number {
+        font-size: 1.2rem;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .experience-box h2 {
+        font-size: 1rem;
+    }
+
+    .experience-box p {
+        font-size: 0.8rem;
+    }
+
+    .experience-number {
+        font-size: 1rem;
+        width: 30px;
+        height: 30px;
+    }
+}
